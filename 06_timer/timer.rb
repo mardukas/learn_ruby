@@ -9,7 +9,7 @@ class Timer
 	end
 
 	def time_string
-		Time.at(@seconds).strftime("%H:%M:%S:%N")
+		Time.at(@seconds).utc.strftime("%H:%M:%S")
 	end
 
 	def seconds=(secs)
